@@ -1,12 +1,13 @@
+//Program of Linear search algorithm implmented using array data structure
 #include <iostream>
 using namespace std;
 int linearsearch(int arr[], int sz, int target) {
     for (int i = 0; i<sz; i++) {
         if (arr[i] == target) {
-            return i;
+            return i; //found
         }
     }
-    return -1;
+    return -1; //not found
 }
 int main() {
     int arr[] = {5,2,7,9,8,10,1};
